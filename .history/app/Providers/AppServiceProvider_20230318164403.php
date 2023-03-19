@@ -30,9 +30,9 @@ class AppServiceProvider extends ServiceProvider
             Filament::registerViteTheme('resources/css/filament.css');
          
             // Using Laravel Mix
-            // Filament::registerTheme(
-            //     mix('css/filament.css'),
-            // );
+            Filament::registerTheme(
+                mix('css/filament.css'),
+            );
         });
     }
 }

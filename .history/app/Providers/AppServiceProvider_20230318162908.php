@@ -5,7 +5,6 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Filament\Facades\Filament;
 
-
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -27,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Filament::serving(function () {
             // Using Vite
-            Filament::registerViteTheme('resources/css/filament.css');
+            Filament::registerViteTheme('/css/filament.css');
          
             // Using Laravel Mix
             // Filament::registerTheme(
